@@ -1,0 +1,53 @@
+/* ScoreWidget.module.css
+ * Styles for the Productivity Score widget.
+ * Implement during TASK-13.
+ */
+
+.widget {
+  padding: 1.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  background: #f9fafb;
+  text-align: center;
+}
+
+.scoreLabel {
+  font-size: 0.875rem;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25rem;
+}
+
+.scoreValue {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #111827;
+  margin: 0 0 1rem;
+}
+
+.breakdown {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 0.75rem;
+}
+
+.rate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.rateLabel {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.rateValue {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #374151;
+}

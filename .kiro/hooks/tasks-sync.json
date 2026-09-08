@@ -1,0 +1,15 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "tasks-sync",
+      "trigger": "PostFileSave",
+      "description": "Updates tasks.md when a module test file is saved",
+      "matcher": "packages[/\\\\].*\\.test\\.ts$",
+      "action": {
+        "type": "agent",
+        "prompt": "A test file was saved. Determine the module from the file path. Open .kiro/specs/dailyflow/tasks.md and mark all tasks for that module as [x] complete. Do not change other modules."
+      }
+    }
+  ]
+}

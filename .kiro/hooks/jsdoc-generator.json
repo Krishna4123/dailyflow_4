@@ -1,0 +1,15 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "jsdoc-generator",
+      "trigger": "PostFileSave",
+      "description": "Auto-generates JSDoc for undocumented functions on save",
+      "matcher": "packages[/\\\\]api[/\\\\]src[/\\\\]modules[/\\\\][^/\\\\]+[/\\\\]service\\.ts$",
+      "action": {
+        "type": "agent",
+        "prompt": "Check the saved file for functions missing JSDoc comments. Generate @param and @returns for each, following .kiro/steering/coding-standards.md. Only add JSDoc — do not change any function logic."
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "ts-validator",
+      "trigger": "PostFileSave",
+      "description": "Catches TypeScript errors immediately after each file save",
+      "matcher": "packages[/\\\\].*\\.(ts|tsx)$",
+      "action": {
+        "type": "command",
+        "command": "npm run type-check 2>&1 | head -30",
+        "timeout": 60
+      }
+    }
+  ]
+}

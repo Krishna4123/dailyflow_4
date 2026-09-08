@@ -1,0 +1,108 @@
+/* HabitTracker.module.css
+ * Styles for the Habit Tracker feature.
+ * Implement during TASK-11.
+ */
+
+.container {
+  padding: 1.5rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* ── Habit list ── */
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+}
+
+.checkbox {
+  width: 1.125rem;
+  height: 1.125rem;
+  cursor: pointer;
+}
+
+.habitName {
+  flex: 1;
+  font-size: 0.95rem;
+}
+
+.streak {
+  font-size: 0.8rem;
+  color: #f59e0b;
+  font-weight: 600;
+}
+
+/* ── Heatmap ── */
+
+.heatmap {
+  display: grid;
+  grid-template-columns: repeat(53, 1fr);
+  gap: 2px;
+  overflow-x: auto;
+}
+
+.heatmapCell {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  background: #e5e7eb;
+}
+
+.heatmapCell[data-level='1'] { background: #bbf7d0; }
+.heatmapCell[data-level='2'] { background: #4ade80; }
+.heatmapCell[data-level='3'] { background: #16a34a; }
+
+/* ── Form ── */
+
+.form {
+  margin-top: 1.25rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.input {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  font-size: 0.9rem;
+}
+
+.addBtn {
+  padding: 0.5rem 1.25rem;
+  background: #10b981;
+  color: #fff;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.addBtn:hover {
+  background: #059669;
+}

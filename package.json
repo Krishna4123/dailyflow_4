@@ -8,7 +8,9 @@
     "test": "npm run test -w packages/api && npm run test -w packages/web",
     "type-check": "npm run type-check -w packages/api && npm run type-check -w packages/web",
     "lint": "eslint packages --ext .ts,.tsx",
-    "docs:check": "node scripts/check-jsdoc.js"
+    "docs:check": "node scripts/check-jsdoc.js",
+    "db:init": "ts-node --project packages/api/tsconfig.json scripts/db-init.ts",
+    "setup:sqlite": "node scripts/setup-sqlite.js"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^7.2.0",

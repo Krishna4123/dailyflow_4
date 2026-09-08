@@ -86,3 +86,9 @@
   font-size: 0.875em;
   color: #374151;
 }
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
