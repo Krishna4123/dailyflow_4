@@ -7,10 +7,10 @@ import { mkdirSync } from 'fs';
  * Resolved from the process working directory so it always lands at
  * <repo-root>/data/db.sqlite regardless of where the process starts.
  */
-const DB_DIR = join(process.cwd(), 'data');
+const DB_DIR = process.env.DB_DIR ?? join(__dirname, '..', '..', '..', 'data');
 
 /** Absolute path to the SQLite file. Never hard-code this outside db.ts. */
-export const DB_PATH = join(DB_DIR, 'db.sqlite');
+export const DB_PATH = process.env.DB_PATH ?? join(DB_DIR, 'db.sqlite');
 
 mkdirSync(DB_DIR, { recursive: true });
 

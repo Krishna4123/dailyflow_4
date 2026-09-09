@@ -25,17 +25,19 @@ export function createApp(): Application {
   const app = express();
 
   // ── Global middleware ────────────────────────────────────────────────────
-  app.use(cors({ origin: process.env.CORS_ORIGIN ?? 'http://localhost:5173' }));
+  app.use(cors());
   app.use(express.json());
 
   // ── Health check ─────────────────────────────────────────────────────────
-  app.get('/api/v1/health', (_req: Request, res: Response): void => {
+  const healthHandler = (_req: Request, res: Response): void => {
     const payload: ApiResponse<{ status: string }> = {
       data: { status: 'ok' },
       error: null,
     };
     res.json(payload);
-  });
+  };
+  app.get('/health', healthHandler);
+  app.get('/api/v1/health', healthHandler);
 
   // ── Module routers ────────────────────────────────────────────────────────
   app.use('/api/v1/tasks',     tasksRouter);

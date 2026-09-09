@@ -1,0 +1,108 @@
+.vectorsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.vectorsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.vectorsTitle {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: var(--on-surface-variant);
+  text-transform: uppercase;
+}
+
+.vectorsCount {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--outline);
+}
+
+.vectorCard {
+  background-color: var(--surface-container);
+  border: 1px solid var(--outline-variant);
+  border-radius: var(--border-radius-sharp);
+  padding: 1rem;
+}
+
+.cardTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.iconAndLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.iconBox {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius-sharp);
+}
+
+.labelHeading {
+  display: flex;
+  flex-direction: column;
+}
+
+.labelCaps {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--on-surface-variant);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.headlineSm {
+  font-family: var(--font-headline);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--on-surface);
+  margin-top: 0.15rem;
+}
+
+.statsRight {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.telemetryValue {
+  font-family: var(--font-mono);
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.deltaTag {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  margin-top: 0.25rem;
+  text-transform: uppercase;
+}
+
+.segmentedBar {
+  margin-top: 0.85rem;
+  display: flex;
+  gap: 4px;
+  height: 8px;
+}
+
+.segment {
+  flex: 1;
+  border-radius: 1px;
+}

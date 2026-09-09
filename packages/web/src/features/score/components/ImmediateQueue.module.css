@@ -1,0 +1,111 @@
+.queueSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.queueHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.queueTitle {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: var(--on-surface-variant);
+  text-transform: uppercase;
+}
+
+.queueBadge {
+  background-color: rgba(255, 180, 171, 0.2);
+  color: var(--error);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: var(--border-radius-sm);
+  font-weight: 600;
+}
+
+.queueItem {
+  background-color: var(--surface-container-low);
+  border: 1px solid var(--outline-variant);
+  border-radius: var(--border-radius-sharp);
+  padding: 0.85rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+.queueItem:hover {
+  background-color: var(--surface-container);
+}
+
+.itemLeft {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-width: 0;
+}
+
+.iconSquare {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius-sm);
+  flex-shrink: 0;
+}
+
+.itemContent {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.tagRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.typeTag {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  padding: 0.1rem 0.35rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.itemTitle {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--on-surface);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.itemSubtitle {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--on-surface-variant);
+  margin-top: 0.15rem;
+}
+
+.actionBtn {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.4rem 0.85rem;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  flex-shrink: 0;
+  transition: all 0.15s ease;
+}

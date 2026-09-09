@@ -1,8 +1,12 @@
 node_modules/
 dist/
 *.js.map
-data/*.sqlite
+data/*.sqlite*
+backend/data/*.sqlite*
+backend/exports/
 exports/*.json
+*.sqlite-wal
+*.sqlite-shm
 .env
 .DS_Store
 coverage/

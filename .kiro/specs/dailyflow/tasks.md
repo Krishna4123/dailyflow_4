@@ -79,7 +79,7 @@ status changes via a dropdown or button on each card.
 
 ### Module 2 — Reminder Engine (backend)
 
-#### TASK-6 — Reminder repository & service
+#### [x] TASK-6 — Reminder repository & service
 Implement `repository.ts` with queries for `findAll`, `findDue`, `create`,
 `update`, `acknowledge`, and `remove`. Implement `service.ts` with
 `computeReminderAckRate` (acknowledged / due, 0 if none due).
@@ -92,7 +92,7 @@ Implement `repository.ts` with queries for `findAll`, `findDue`, `create`,
 
 ---
 
-#### TASK-7 — Reminder router
+#### [x] TASK-7 — Reminder router
 Wire up `packages/api/src/modules/reminders/router.ts`:
 `GET /api/v1/reminders`, `POST /api/v1/reminders`,
 `PATCH /api/v1/reminders/:id`,

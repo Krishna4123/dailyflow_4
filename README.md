@@ -17,13 +17,12 @@ npm run dev
 
 ## What's already here
 
-- Monorepo scaffold (`packages/api`, `packages/web`)
+- Full-stack application scaffold (`backend`, `frontend`)
 - TypeScript strict mode configured everywhere
-- ESLint with `max-lines: 200` (enforced as a build error)
-- SQLite database setup and Express skeleton
-- React + Vite frontend shell with tab navigation
-- A pre-wired export endpoint (requires Phase 5 MCP setup to work)
-- A habit streak utility with a bug you will fix in Phase 6
+- SQLite database setup with Express backend
+- React + Vite frontend with tab navigation
+- Health check: http://localhost:3001/api/v1/health
+- Tasks, reminders, habits, score, and export features
 
 ## What you will build with Kiro
 
